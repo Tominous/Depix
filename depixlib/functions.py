@@ -31,7 +31,7 @@ def findSameColorRectangle(pixelatedImage, startCoordinates, maxCoordinates):
 		for testy in range(starty, starty+height):
 
 			if pixelatedImage.imageData[testx][testy] != color:
-				# logging.info("Found rectangle error")
+				 logging.info("Found rectangle error")
 				return ColorRectange(color, (startx, starty), (testx, testy))
 
 	return ColorRectange(color, (startx, starty), (startx + width, starty + height))
@@ -53,7 +53,7 @@ def findSameColorSubRectangles(pixelatedImage, rectangle):
 			sameColorRectange = findSameColorRectangle(pixelatedImage, (x, y), (maxx, maxy))
 			if sameColorRectange == False:
 				continue
-			# logging.info("Found rectangle at (%s, %s) with size (%s,%s) and color %s" % (x, y, sameColorRectange.width,sameColorRectange.height,sameColorRectange.color))
+			 logging.info("Found rectangle at (%s, %s) with size (%s,%s) and color %s" % (x, y, sameColorRectange.width,sameColorRectange.height,sameColorRectange.color))
 			sameColorRectanges.append(sameColorRectange)
 
 			y += sameColorRectange.height
