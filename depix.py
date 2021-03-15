@@ -74,7 +74,7 @@ writeFirstMatchToImage(singleResults, rectangleMatches, searchImage, unpixelated
 logging.info("Writing average results for multiple matches to output")
 writeAverageMatchToImage(pixelatedSubRectanges, rectangleMatches, searchImage, unpixelatedOutputImage)
 
-# writeRandomMatchesToImage(pixelatedSubRectanges, rectangleMatches, searchImage, unpixelatedOutputImage)
+ writeRandomMatchesToImage(pixelatedSubRectanges, rectangleMatches, searchImage, unpixelatedOutputImage)
 
 logging.info("Saving output image to: %s" % args.outputimage)
 unpixelatedOutputImage.save(args.outputimage)
