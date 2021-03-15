@@ -106,7 +106,7 @@ def findRectangleMatches(rectangeSizeOccurences, pixelatedSubRectanges, searchIm
 		rectangleWidth = rectangleSize[0]
 		rectangleHeight = rectangleSize[1]
 		pixelsInRectangle = rectangleWidth*rectangleHeight
-		# logging.info('For rectangle size {}x{}'.format(rectangleWidth, rectangleHeight))
+		 logging.info('For rectangle size {}x{}'.format(rectangleWidth, rectangleHeight))
 
 		# filter out the desired rectangle size
 		matchingRectangles = []
@@ -143,8 +143,8 @@ def findRectangleMatches(rectangeSizeOccurences, pixelatedSubRectanges, searchIm
 						newRectangleMatch = RectangleMatch(x, y, matchData)
 						rectangleMatches[(matchingRectangle.x,matchingRectangle.y)].append(newRectangleMatch)
 
-			# if x % 64 == 0:
-			# 	logging.info('Scanning in searchImage: {}/{}'.format(x, searchImage.width - rectangleWidth))
+			 if x % 64 == 0:
+			 	logging.info('Scanning in searchImage: {}/{}'.format(x, searchImage.width - rectangleWidth))
 
 	return rectangleMatches
 
